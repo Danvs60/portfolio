@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import ContactMe from "./components/ContactMe";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 
@@ -28,9 +29,9 @@ function App() {
           <Route path="/projects">
             <Projects />
           </Route>
-          {/* <Route path="/">
-            <Home />
-          </Route> */}
+          <Route path="/contact">
+            <ContactMe />
+          </Route>
         </Switch>
       </div>
     </Router>

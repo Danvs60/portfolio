@@ -8,6 +8,50 @@ html {
   font-family: "Fira Sans", "Roboto", sans-serif;
 }
 
+a,
+a:active,
+a:focus {
+  outline: none !important;
+}
+
+.home {
+  opacity: 0;
+  transform: translateX(-70%);
+  animation: text-enter 1s ease-out forwards 0.3s;
+}
+
+.home:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.home:nth-child(3) {
+  animation-delay: 1.5s;
+}
+
+.home:nth-child(4) {
+  animation-delay: 2s;
+}
+
+@keyframes text-enter {
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.projects {
+  opacity: 0;
+  transform: translateX(70%);
+  animation: text-enter 1s ease-out forwards 0.3s;
+}
+
+@keyframes text-enter {
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .card {
   width: 25%;
   opacity: 0;
@@ -28,5 +72,34 @@ html {
   100% {
     transform: translateY(0%);
     opacity: 1;
+  }
+}
+
+.stars {
+  transform: translateX(70%) translateY(-70%);
+  opacity: 0;
+  animation: shoot 2s ease forwards 0.7s;
+}
+
+@keyframes shoot {
+  100% {
+    transform: translateX(0%) translateY(0%);
+    opacity: 1;
+  }
+}
+
+.left {
+  transform: translateX(-150%);
+  animation: sides-enter 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards 0.2s;
+}
+
+.right {
+  transform: translateX(150%);
+  animation: sides-enter 2s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards 0.2s;
+}
+
+@keyframes sides-enter {
+  100% {
+    transform: translateX(0);
   }
 }
