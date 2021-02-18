@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto&display=swap");
+
+html {
+  font-family: "Fira Sans", "Roboto", sans-serif;
+}
+
+.card {
+  width: 25%;
+  opacity: 0;
+  transform: translateY(70%);
+  animation: card-enter 1s ease-in-out forwards 0.5s;
+}
+
+.card:nth-child(2) {
+  transform: translateY(50%);
+  animation-delay: 1s;
+}
+.card:nth-child(3) {
+  transform: translateY(40%);
+  animation-delay: 1.5s;
+}
+
+@keyframes card-enter {
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
