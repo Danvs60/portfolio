@@ -18,6 +18,9 @@ module.exports = {
         },
         ultramarineBlue: {
           DEFAULT: "#446DF6"
+        },
+        darkOrange: {
+          DEFAULT: "#F58A07"
         }
       },
     },
