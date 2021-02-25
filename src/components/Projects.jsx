@@ -1,23 +1,24 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import { BottomMountains, ShootingStars } from "./vectors";
+import waves from "../images/waves.svg";
+import shooting from "../images/shooting.svg";
 
 export default function Projects() {
   return (
     <>
-      <div className="absolute top-6 right-20 stars">
-        <ShootingStars />
-      </div>
-      <div className="absolute bottom-0 w-full">
-        <BottomMountains />
-      </div>
-      <div className="flex flex-col justify-between flex-grow px-32 py-16">
-        <section className="flex flex-col gap-16 z-10">
-          <h1 className="font-bold text-8xl z-10 projects">Projects</h1>
+      <img
+        className="absolute right-36 top-28 stars"
+        src={shooting}
+        alt="shootingStars"
+      />
+      <img className="absolute bottom-0" src={waves} alt="waves" />
+      <div className="flex flex-col justify-between flex-grow px-32 pb-12">
+        <section className="flex flex-col gap-24 z-10">
+          <h1 className="font-bold text-8xl z-10 projects">Some of my work</h1>
           <div className="flex gap-x-16 cards">
             <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
+            <ProjectCard className=" mt-32" />
+            <ProjectCard className=" mt-64" />
           </div>
         </section>
         <p className="text-5xl z-10 projects">
