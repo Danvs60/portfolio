@@ -12,7 +12,7 @@ import React from "react";
 function App() {
   return (
     <Router>
-      <div className="flex flex-col gap-16 relative h-screen w-full bg-oxfordBlue text-mintCream overflow-hidden">
+      <div className="flex flex-col gap-y-8 relative h-screen w-full bg-oxfordBlue text-mintCream overflow-hidden">
         {/* NavBar */}
         <section className="pt-6 font-semibold flex justify-evenly self-end mb-4 w-1/3 text-3xl text-gray-100 z-20">
           <h3>

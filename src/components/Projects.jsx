@@ -14,9 +14,12 @@ export default function Projects() {
       <img className="absolute bottom-0" src={waves} alt="waves" />
       <div className="flex flex-col justify-between flex-grow px-32 pb-12">
         <section className="flex flex-col gap-24 z-10">
-          <h1 className="font-bold text-8xl z-10 projects">Some of my work</h1>
+          <h1 className="font-bold text-8xl z-10">Some of my work</h1>
           <div className="flex gap-x-16 cards">
-            <ProjectCard />
+            <ProjectCard
+              title="Genetic Algorithms"
+              desc="2 algorithms that will pick the solution with the best fitness."
+            />
             <ProjectCard className=" mt-32" />
             <ProjectCard className=" mt-64" />
           </div>
