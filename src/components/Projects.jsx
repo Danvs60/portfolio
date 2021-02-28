@@ -2,6 +2,9 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import waves from "../images/waves.svg";
 import shooting from "../images/shooting.svg";
+import ga from "../images/undraw_problem_solving.svg";
+import lofi from "../images/undraw_experience_design.svg";
+import ttt from "../images/undraw_gaming.svg";
 
 export default function Projects() {
   return (
@@ -18,14 +21,31 @@ export default function Projects() {
           <div className="flex gap-x-16 cards">
             <ProjectCard
               title="Genetic Algorithms"
-              desc="2 algorithms that will pick the solution with the best fitness."
+              descr="2 algorithms that will pick the solution with the best fitness."
+              img={ga}
             />
-            <ProjectCard className=" mt-32" />
-            <ProjectCard className=" mt-64" />
+            <ProjectCard
+              title="Lo-Fi Prototype"
+              descr="Lo-Fi prototype of a touchscreen app that lets users order their coffe at the cafe."
+              img={lofi}
+              className=" mt-32"
+            />
+            <ProjectCard
+              title="Tic Tac Toe"
+              descr="The good old tic tac toe game, built in html and javascript."
+              img={ttt}
+              className=" mt-64"
+            />
           </div>
         </section>
         <p className="text-5xl z-10 projects">
-          Find more on my <span className="underline">GitHub</span>
+          Find more on my{" "}
+          <a
+            href="https://github.com/Danvs60"
+            className="underline duration-200 hover:text-darkOrange"
+          >
+            GitHub
+          </a>
         </p>
       </div>
     </>
