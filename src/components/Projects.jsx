@@ -23,18 +23,21 @@ export default function Projects() {
               title="Genetic Algorithms"
               descr="2 algorithms that will pick the solution with the best fitness."
               img={ga}
+              url="https://github.com/Danvs60/genetic-algorithms"
             />
             <ProjectCard
               title="Lo-Fi Prototype"
               descr="Lo-Fi prototype of a touchscreen app that lets users order their coffe at the cafe."
               img={lofi}
               className=" mt-32"
+              url="https://github.com/Danvs60/lofi-prototyping"
             />
             <ProjectCard
               title="Tic Tac Toe"
               descr="The good old tic tac toe game, built in html and javascript."
               img={ttt}
               className=" mt-64"
+              url="https://github.com/Danvs60/tictactoe"
             />
           </div>
         </section>
