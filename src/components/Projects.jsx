@@ -27,7 +27,7 @@ export default function Projects() {
             />
             <ProjectCard
               title="Lo-Fi Prototype"
-              descr="Lo-Fi prototype of a touchscreen app that lets users order their coffe at the cafe."
+              descr="Lo-Fi prototype of a touchscreen app that lets users order their coffee at the cafe."
               img={lofi}
               className=" mt-32"
               url="https://github.com/Danvs60/lofi-prototyping"
