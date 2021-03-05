@@ -12,9 +12,9 @@ import React from "react";
 function App() {
   return (
     <Router>
-      <div className="flex flex-col gap-y-8 relative h-screen w-full bg-oxfordBlue text-mintCream overflow-hidden">
+      <div className="flex flex-col flex-grow min-h-screen gap-y-8 bg-oxfordBlue text-mintCream text-lg sm:text-2xl lg:text-3xl">
         {/* NavBar */}
-        <section className="pt-6 font-semibold flex justify-evenly self-end mb-4 w-1/3 text-3xl text-gray-100 z-20">
+        <section className="my-4 py-4 px-12 gap-x-10 bg-gray-400 bg-opacity-20 md:bg-transparent sm:text-2xl xl:text-3xl font-semibold flex lg:gap-x-16 justify-around md:justify-end text-gray-100 z-20">
           <h3>
             <NavLink
               activeClassName="border-darkOrange border-b-2"
@@ -37,7 +37,7 @@ function App() {
               activeClassName="border-darkOrange border-b-2"
               to="/contact"
             >
-              Contact me
+              Contacts
             </NavLink>
           </h3>
         </section>
