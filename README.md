@@ -16,3 +16,7 @@ The design was developed with Figma.
 
 Mainly styled with Tailwind.CSS and some CSS animations.
 
+# CICD
+
+Implements a simple CICD with the Amazon S3 bucket this website is stored on.
+
