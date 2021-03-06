@@ -25,19 +25,30 @@ export default function Home() {
         <div className="flex items-center flex-row justify-between md:h-72 xl:h-96">
           <h1
             style={headerFont}
-            className="mr-4 font-semibold leading-relaxed tracking-wide lg:leading-loose lg:tracking-widest text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl z-10 home"
+            className="mr-4 font-semibold leading-relaxed tracking-wide lg:leading-loose 
+            lg:tracking-widest text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl z-10 home"
           >
             Hello, <br /> I am Daniel Bartolini
           </h1>
           <img className="rounded-full h-44 md:h-full " src={me} alt="me" />
         </div>
-        <h3 className="w-3/4 px-4 py-4 text-lg sm:text-xl md:text-2xl xl:text-4xl font-light italic border-l border-darkOrange place-self-center home">
-          University of Kent <br /> BSc Computer Science (Networks) <br /> 2nd
-          year
-        </h3>
-        <h3 className="w-3/4 px-4 py-4 text-right sm:text-left text-lg sm:text-xl md:text-2xl xl:text-4xl font-light italic border-r border-l-0 sm:border-l sm:border-r-0 border-darkOrange place-self-center lg:place-self-end home">
-          Native Italian <br /> Native/Bilingual English
-        </h3>
+        <section className="self-center flex flex-col w-3/4 lg:w-1/2 gap-y-20 home">
+          <h3
+            className="self-center px-4 py-4 text-lg sm:text-xl md:text-2xl xl:text-4xl 
+        font-light italic border-l border-darkOrange home"
+          >
+            University of Kent <br /> BSc Computer Science (Networks) <br /> 2nd
+            year
+          </h3>
+
+          <h3
+            className="px-4 py-4 text-right sm:text-left text-lg sm:text-xl 
+        md:text-2xl xl:text-4xl font-light italic border-r border-l-0 sm:border-l 
+        sm:border-r-0 border-darkOrange self-center lg:self-end home"
+          >
+            Native Italian <br /> Native/Bilingual English
+          </h3>
+        </section>
       </section>
     </>
   );
