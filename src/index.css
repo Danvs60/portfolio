@@ -46,7 +46,6 @@ html {
 }
 
 .card {
-  width: 25%;
   opacity: 0;
   transform: translateY(70%);
   animation: card-enter 1s ease-in-out forwards 0.5s;
