@@ -3,6 +3,7 @@ import me from "../images/me.jpg";
 import left from "../images/left.svg";
 import right from "../images/right.svg";
 import tablet_bg from "../images/tablet_home.svg";
+import logo from "../images/logo.svg";
 
 export default function Home() {
   const headerFont = {
@@ -48,6 +49,11 @@ export default function Home() {
           >
             Native Italian <br /> Native/Bilingual English
           </h3>
+
+          {/* Logo */}
+          <div className="overflow-hidden rounded-sm h-16 w-32 self-center sm:h-auto sm:w-auto">
+            <img className="h-full w-full" src={logo} alt="logo" />
+          </div>
         </section>
       </section>
     </>
